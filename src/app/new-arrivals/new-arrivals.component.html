@@ -1,0 +1,20 @@
+<section class="products">
+  <div class="wrapper">
+    <div class="products__categories">
+      <ul>
+        <a href="#">
+          <li>NEW ARRIVALS</li>
+        </a>
+        <a href="#">
+          <li>TOP SELLERS</li>
+        </a>
+        <a href="#">
+          <li>FEATURED</li>
+        </a>
+      </ul>
+    </div>
+  </div>
+</section>
+<div *ngFor="let product of products">
+  {{product.name}}
+</div>

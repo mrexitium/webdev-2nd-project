@@ -1,0 +1,44 @@
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/variables.scss';
+
+.brands {
+    background-color: #f6f6f6;
+    padding: 50px 0;
+
+    &__headline {
+        @include horizontal-line-text($color-site-black);
+        color: $color-site-black;
+        font-size: 20px;
+        width: 30%;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* Slider */
+#container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.items {
+    max-width:200px;
+    height:200px;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 190px;
+        margin: 0 5px;
+        height: auto;
+    }
+}
+
+#left, #right { 
+    margin: 30px;
+    cursor: pointer;
+}

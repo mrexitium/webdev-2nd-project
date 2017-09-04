@@ -1,1 +1,12 @@
 /* grid styles */
+
+@import './variables.scss';
+
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: $screen-size-computer) {
+        width: 1200px;
+    }
+}

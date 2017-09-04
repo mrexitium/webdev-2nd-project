@@ -1,0 +1,27 @@
+@import '../../assets/scss/variables.scss';
+@import '../../assets/scss/mixins.scss';
+
+.header {
+    background: url('../../assets/images/banner.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    min-height: 40vw;
+    margin-top: -132px;
+
+    .wrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        min-height: inherit;
+    }
+
+    button {
+        position: relative;
+        bottom: 80px;
+        color: $color-menu-items;
+        padding: 20px 40px;
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid $color-menu-items;
+        cursor: pointer;
+    }
+}

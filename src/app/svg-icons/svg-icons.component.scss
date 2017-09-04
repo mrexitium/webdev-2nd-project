@@ -1,0 +1,19 @@
+.svg-wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.svg {
+    width: 85px;
+}
+
+.svg:hover circle {
+    stroke: #000;
+}
+
+.svg:hover path, .svg:hover polygon {
+    fill: #000;
+}

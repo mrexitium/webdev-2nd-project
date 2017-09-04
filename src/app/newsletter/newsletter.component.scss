@@ -1,0 +1,72 @@
+@import '../../assets/scss/variables.scss';
+@import '../../assets/scss/mixins.scss';
+
+.newsletter {
+    padding: 80px 0 90px 0;
+    background-color: #fff;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__img-men {
+        @include lookbook-box('../../assets/images/man.png');
+    }
+
+    &__get-newsletter {
+        background-color: #f8f8f8;
+        flex-basis: 40%;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    &__img-women {
+        @include lookbook-box('../../assets/images/woman.png');
+    }
+
+    &__content-wrapper {
+        border: 2px solid #dcdcdc;
+        width: inherit;
+        height: 400px;
+        margin: 12px;
+        text-align: center;
+
+        img {
+            margin: 30px 0 20px 0;
+            width: 64px;
+        }
+
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 30px;
+        }
+        
+        p {
+            margin: 0;
+            font-size: 18px;
+            color: #6e6e6e;
+        }
+
+        form {
+            margin: 20px 0;
+        }
+
+        input[type=email] {
+            border: none;
+            border-bottom: 1px solid black;
+            width: 80%;
+            background-color: inherit;
+            padding: 15px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        input[type=submit] {
+            border: 1px solid black;
+            width: 80%;
+            margin: 10px 0;
+            padding: 15px;
+            text-align: center;
+            background-color: inherit;
+        }
+    }
+}

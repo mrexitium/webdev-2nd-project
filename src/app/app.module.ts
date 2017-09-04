@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from "@angular/router";
+import { Ng2CarouselamosModule } from "ng2-carouselamos";
+import { DataService } from "./data.service";
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -10,6 +12,15 @@ import { CollectionComponent } from './collection/collection.component';
 import { ProductComponent } from './product/product.component';
 import { ContactComponent } from './contact/contact.component';
 import { Page404Component } from './page404/page404.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { SvgIconsComponent } from './svg-icons/svg-icons.component';
+import { HomepageHeaderComponent } from './homepage-header/homepage-header.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
+import { BrandsComponent } from './brands/brands.component';
+import { PromotionComponent } from './promotion/promotion.component';
+import { NewArrivalsComponent } from './new-arrivals/new-arrivals.component';
+import { PromotionBannerComponent } from './promotion-banner/promotion-banner.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -20,10 +31,20 @@ import { Page404Component } from './page404/page404.component';
     CollectionComponent,
     ProductComponent,
     ContactComponent,
-    Page404Component
+    Page404Component,
+    NavigationComponent,
+    SvgIconsComponent,
+    HomepageHeaderComponent,
+    NewsletterComponent,
+    BrandsComponent,
+    PromotionComponent,
+    NewArrivalsComponent,
+    PromotionBannerComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,
+    Ng2CarouselamosModule,
     RouterModule.forRoot([
       { path: 'home', component: HomepageComponent },
       { path: 'products', component: CollectionComponent },
@@ -33,7 +54,7 @@ import { Page404Component } from './page404/page404.component';
       { path: '**', component: Page404Component }
     ])
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

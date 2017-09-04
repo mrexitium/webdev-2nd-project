@@ -1,0 +1,65 @@
+/* Mixins here */
+
+@mixin horizontal-line-text($color) {
+    
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+
+    > span {
+
+        position: relative;
+        display: inline-block;
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 9999px;
+            height: 1px;
+            background: $color;
+        }
+
+        &:before {
+            right: 100%;
+            margin-right: 15px;
+        }
+
+        &:after {
+            left: 100%;
+            margin-left: 15px;
+        }
+    }
+}
+
+@mixin lookbook-box($url) {
+    background-image: url($url);
+    background-size: cover;
+    background-position: center top;
+    min-height: 400px;
+    margin: 15px 0;
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        border: 1px solid white;
+        width: 250px;
+        height: 150px;
+        text-align: center;
+        color: #fff;
+
+        h1 {
+            font-size: 42px;
+            margin: 20px 0 0 0;
+        }
+
+        h2 {
+            font-size: 48px;
+            margin: 0;
+        }
+    }
+}
