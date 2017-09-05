@@ -21,6 +21,11 @@ import { PromotionComponent } from './promotion/promotion.component';
 import { NewArrivalsComponent } from './new-arrivals/new-arrivals.component';
 import { PromotionBannerComponent } from './promotion-banner/promotion-banner.component';
 import { ReviewsComponent } from './reviews/reviews.component';
+import { CollectionHeaderComponent } from './collection-header/collection-header.component';
+import { CollectionProductsComponent } from './collection-products/collection-products.component';
+import { CollectionNewsletterComponent } from './collection-newsletter/collection-newsletter.component';
+import { ContactHeaderComponent } from './contact-header/contact-header.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +45,12 @@ import { ReviewsComponent } from './reviews/reviews.component';
     PromotionComponent,
     NewArrivalsComponent,
     PromotionBannerComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    CollectionHeaderComponent,
+    CollectionProductsComponent,
+    CollectionNewsletterComponent,
+    ContactHeaderComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

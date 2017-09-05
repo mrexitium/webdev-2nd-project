@@ -1,0 +1,48 @@
+@import '../../assets/scss/variables.scss';
+@import '../../assets/scss/mixins.scss';
+
+.collection-header {
+    background: url('../../assets/images/collection-banner.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    min-height: 40vw;
+    margin-top: -132px;
+
+    .wrapper {
+        min-height: inherit;
+    }
+
+    &__text {
+        min-height: inherit;
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1:nth-child(2) {
+            align-self: center;
+            margin: 0;
+            font-size: 100px;
+            color: #fff;
+            margin: 0 0 20px 0;
+        }
+
+        button {
+            background: none;
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 20px 25px;
+            align-self: center;
+            font-size: 16px;
+        }
+    }
+}
+
+.horizontal-line-text {
+    @include horizontal-line-text(#fff);
+    color: #fff;
+    margin: 0;
+    font-size: 60px;
+    font-weight: normal;
+}

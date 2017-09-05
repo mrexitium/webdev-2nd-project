@@ -63,3 +63,114 @@
         }
     }
 }
+
+@mixin product() {
+    flex-basis: 24%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35px 240px 120px 85px; 
+    margin-bottom: 50px;
+
+    &__img-wrapper {
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__img-overlay {
+        grid-column: 1 / 2;
+        grid-row:  1 / 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__specs {
+        grid-column: 1 / 2;
+        grid-row:  4 / 5;
+
+        p {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        span {
+            font-size: 20px;
+        }
+
+        button {
+            background-color: inherit;
+            padding: 8px 22px;
+            border: 1px solid black;
+            font-size: 14px;
+
+            img {
+                width: 14px;
+                margin-right: 14px;
+                vertical-align: sub;
+            }
+        }
+    }
+
+    &--sale {
+        align-self: baseline;
+        background: #33d0de;
+        color: #fff;
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+
+    &--hover {
+        display: flex;
+        align-content: flex-end;
+        height: 120px;
+        background: rgba(255, 255, 255, 0.9);
+        display: flex;
+        justify-content: space-around;
+        display: none;
+
+        div {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            img {
+                width: 44px;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    &:hover .product--hover {
+        display: flex;
+    }
+
+    &:hover .product--sale {
+        display: none;
+    }
+
+    &:hover .product__img-overlay {
+        justify-content: flex-end;
+    }
+
+    &:hover .product__price button {
+        cursor: pointer;
+    }
+
+    &__price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

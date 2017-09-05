@@ -3,7 +3,7 @@
     <div class="products__categories">
       <ul>
         <a href="#">
-          <li>NEW ARRIVALS</li>
+          <li class="products--active">NEW ARRIVALS</li>
         </a>
         <a href="#">
           <li>TOP SELLERS</li>
@@ -13,8 +13,38 @@
         </a>
       </ul>
     </div>
+
+    <div class="products__row">
+      <ng-template  ngFor let-product [ngForOf]="products" let-i="index">
+        <div class="product" *ngIf="i < 4">
+          <div class="product__img-wrapper">
+            <img src="{{product.images[0]}}" alt="product image">
+          </div>
+          <div class="product__img-overlay">
+            <div class="product--sale">SALE</div>
+            <div class="product--hover">
+              <div>
+                <a [routerLink]="['/product', product._id]"><img src="../../assets/images/eye.svg" alt="quick view"></a>
+                <a [routerLink]="['/product', product._id]"><p>Quick View</p></a>
+              </div>
+              <div>
+                  <img src="../../assets/images/Heart.svg" alt="save">
+                  <p>Save</p>
+                </div>
+            </div>
+          </div>
+          <div class="product__specs">
+            <p>{{ product.name }}</p>
+            <div class="product__price">
+              <span>{{ product.price | currency:USD:true }}</span>
+              <button><img src="../../assets/images/Bag.svg" alt="add to bag">ADD TO BAG</button>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </div>
   </div>
 </section>
-<div *ngFor="let product of products">
+<!-- <div *ngFor="let product of products">
   {{product.name}}
-</div>
+</div> -->
