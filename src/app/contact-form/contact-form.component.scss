@@ -1,0 +1,65 @@
+@import "../../assets/scss/variables.scss";
+@import "../../assets/scss/mixins.scss";
+
+.contact-form {
+    background-color: #f8f8f8;
+    margin: 80px 0 0 0;
+
+    &__wrapper {
+        display: flex;
+
+        img {
+            width: 50%;
+        }
+
+        > div {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            form {
+                width: 75%;
+
+                input[type=text] {
+                    width: 100%;
+                    background: none;
+                    border: 1px solid $color-site-black;
+                    padding: 10px 20px;
+                    margin: 20px 0;
+                    box-sizing: border-box;
+                }
+
+                input[type=email] {
+                    width: 100%;
+                    background: none;
+                    border: 1px solid $color-site-black;
+                    padding: 10px 20px;
+                    margin: 20px 0;
+                    box-sizing: border-box;
+                }
+
+                textarea {
+                    width: 100%;
+                    background: none;
+                    border: 1px solid $color-site-black;
+                    padding: 10px 20px;
+                    margin: 20px 0;
+                    box-sizing: border-box;
+                }
+
+                button {
+                    width: 100%;
+                    background: none;
+                    border: 1px solid $color-site-black;
+                    padding: 10px 20px;
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}
+
+.alert {
+    color: tomato;
+}

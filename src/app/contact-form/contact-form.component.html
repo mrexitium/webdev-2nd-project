@@ -1,3 +1,40 @@
-<p>
-  contact-form works!
-</p>
+<section class="contact-form">
+  <div class="wrapper">
+    <div class="contact-form__wrapper">
+      <img src="../../assets/images/contact-form-img.png" alt="Contact form img">
+
+      <div *ngIf="!submitted; else showConfirmation">
+        <form #signupForm="ngForm" (ngSubmit)="submitForm()">
+          <div>
+              <div *ngIf="!name.valid && !name.pristine" class="alert">
+                Name is required
+              </div>
+            <input #name="ngModel" id="name" name="name" [(ngModel)]="person.name" type="text" required placeholder="YOUR NAME">
+          </div>
+
+          <div>
+              <div *ngIf="!email.valid && !email.pristine" class="alert">
+                Email is required or invalid
+              </div>
+            <input #email="ngModel" id="email" name="email" [(ngModel)]="person.email" type="email" required placeholder="YOUR EMAIL">
+          </div>
+
+          <div>
+              <div *ngIf="!message.valid && !message.pristine" class="alert">
+                Message is required or invalid
+              </div>
+            <textarea #message="ngModel" name="message" id="message" cols="30" rows="10" [(ngModel)]="person.message"required placeholder="YOUR MESSAGE"></textarea>
+          </div>
+
+          <div>
+            <button type="submit" [disabled]="signupForm.invalid">SEND</button>
+          </div>
+        </form>
+      </div>
+
+      <ng-template #showConfirmation>
+        Thanks for contacting us, {{person.name}}!
+      </ng-template>
+    </div>
+  </div>
+</section>

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from "@angular/router";
 import { Ng2CarouselamosModule } from "ng2-carouselamos";
 import { DataService } from "./data.service";
+import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -54,6 +55,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     Ng2CarouselamosModule,
     RouterModule.forRoot([
       { path: 'home', component: HomepageComponent },
