@@ -1,0 +1,23 @@
+@import '../../assets/scss/variables.scss';
+@import '../../assets/scss/mixins.scss';
+
+.product-header {
+    margin-top: -132px;
+    border-top: 132px solid $color-site-black;
+
+    img {
+        height: 132px;
+        width: 100%;
+    }
+
+    h1 {
+        line-height: 132px;
+        margin: 0;
+        text-align: center;
+        margin-top: -132px;
+        font-size: 60px;
+        color: white;
+        font-weight: normal;
+        letter-spacing: 5px;
+    }
+}

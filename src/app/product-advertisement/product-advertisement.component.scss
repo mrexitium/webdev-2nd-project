@@ -1,0 +1,126 @@
+@import '../../assets/scss/variables.scss';
+@import '../../assets/scss/mixins.scss';
+
+.product-advertisement {
+    padding: 80px 0 0 0;
+
+    &__headline {
+        font-size: 60px;
+        text-align: center;
+        position: relative;
+        
+        &:before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -30px;
+            height: 5px;
+            width: 80px;
+            margin-left: -40px;
+            border-bottom: 4px solid $color-site-cyan;
+        }
+    }
+
+    &__paragraph {
+        margin: 50px auto 0 auto;
+        width: 70%;
+        text-align: center;
+        font-size: 16px;
+        color: #939393;
+        line-height: 28px;
+    }
+
+    &__product-grid {
+        margin-top: 80px;
+    }
+
+    &__product-row {
+        display: flex;
+
+        img {
+            flex-basis: 50%;
+            width: 100%; 
+            height: auto;
+            vertical-align: middle;
+        }
+
+        div {
+            flex-basis: 50%;
+            background-color: $color-site-black;
+            color: white;
+        }
+    }
+
+    &__product-row:last-child {
+        flex-direction: row-reverse;
+
+        div {
+            background-color: $color-site-cyan;
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+    }
+
+    &__product-info-wrapper {
+        width: 75%;
+        margin: 70px auto 0 auto;
+
+        h1 {
+            font-size: 36px;
+            font-weight: normal;
+        }
+
+        p {
+            font-size: 14px;
+            color: #939393;
+            line-height: 28px;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            width: 85%;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: white;
+
+                img {
+                    width: 80px;
+                }
+            }
+        }
+
+        button {
+            width: 50%;
+            background: none;
+            border: 2px solid white;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            margin: 20px 0;
+        }
+    }
+
+    &__banner {
+        background-image: url('../../assets/images/discounts.png');
+        background-size: cover;
+        min-height: 29vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            color: white;
+            border: 4px solid white;
+            font-size: 46px;
+            padding: 25px;
+        }
+    }
+}

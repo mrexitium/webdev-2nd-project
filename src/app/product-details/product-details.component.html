@@ -1,0 +1,58 @@
+<section class="product-details">
+  <div class="wrapper">
+    <div class="product-details__wrapper">
+      <div class="product-details__img-wrapper">
+        <div>
+          <img src="{{ product.images[0] }}" alt="picture of product">
+        </div>
+        
+        <div>
+          <img src="{{ product.images[1] }}" alt="picture of product">
+        </div>
+
+        <div>
+          <img src="{{ product.images[2] }}" alt="picture of product">
+        </div>
+
+        <div>
+          <img src="{{ product.images[3] }}" alt="picture of product">
+        </div>
+
+        <div>
+          <img src="{{ product.images[4] }}" alt="picture of product">
+        </div>
+
+        <div>
+          <img src="{{ product.images[0] }}" alt="picture of product">
+        </div>
+      </div>
+
+      <div class="product-details__info-wrapper">
+        <div class="product-details__name-wrapper">
+          <h1>{{ product.name }}</h1>
+          <p>{{ product.price | currency:USD:true }}</p>
+          <div><img src="../../assets/images/Globe.svg" alt="globe icon"><p>Free Shipping Worldwide</p></div>
+        </div>
+        <div class="product-details__form-wrapper">
+          <form>
+            <select>
+              <option value="black" selected>Black</option>
+            </select>
+            <select>
+              <option value="size">Select Size</option>
+            </select>
+            <button class="product-details__add-button"><img src="../../assets/images/BagWhite.svg" alt="shopping bag">ADD TO BAG</button>
+            <button class="product-details__save-button">SAVE FOR LATER</button>
+          </form>
+          <div class="product-details__button-wrapper">
+            <button class="product-details__size-button"><img src="../../assets/images/Size.svg" alt="size guide">Size Guide</button>
+            <a href="#" class="product-details__share-link"><img src="../../assets/images/Share.svg" alt="share product">Share this product</a>   
+          </div>
+        </div>
+        <div class="product-details__tabs-wrapper">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

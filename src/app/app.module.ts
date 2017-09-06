@@ -27,6 +27,9 @@ import { CollectionProductsComponent } from './collection-products/collection-pr
 import { CollectionNewsletterComponent } from './collection-newsletter/collection-newsletter.component';
 import { ContactHeaderComponent } from './contact-header/contact-header.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ProductHeaderComponent } from './product-header/product-header.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ProductAdvertisementComponent } from './product-advertisement/product-advertisement.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +54,10 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     CollectionProductsComponent,
     CollectionNewsletterComponent,
     ContactHeaderComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    ProductHeaderComponent,
+    ProductDetailsComponent,
+    ProductAdvertisementComponent
   ],
   imports: [
     BrowserModule,

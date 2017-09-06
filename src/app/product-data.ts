@@ -1,12 +1,12 @@
 import { Product } from "./product";
 export const productData: Product[] = [
 	{
-        "name": "The Pioneer Woman",
+        "name": "Adelia Dress",
         "_id": "47024",
-        "description": "dress",
-        "price": 100,
-        "brand": "http://thepioneerwoman.com",
-        "info": "Perfect Iced Coffee",
+        "description": "This is a dress",
+        "price": 79.95,
+        "brand": "Brand info goes here",
+        "info": "There is a lot to know about this dress, read all about it in this info section",
         "images": [
             'assets/images/product-img.png',
             'assets/images/brand2.png',
@@ -21,7 +21,7 @@ export const productData: Product[] = [
             'assets/images/brand1.png'
         ]
 	}, {
-        "name": "The Pioneer Woman",
+        "name": "Adelia Dress",
         "_id": "47024",
         "description": "dress",
         "price": 100,
@@ -41,7 +41,7 @@ export const productData: Product[] = [
             'assets/images/brand1.png'
         ]
 	},{
-        "name": "The Pioneer Woman",
+        "name": "Adelia Dress",
         "_id": "47024",
         "description": "dress",
         "price": 100,
@@ -61,7 +61,7 @@ export const productData: Product[] = [
             'assets/images/brand1.png'
         ]
 	},{
-        "name": "The Pioneer Woman",
+        "name": "Adelia Dress",
         "_id": "47024",
         "description": "dress",
         "price": 100,
@@ -81,7 +81,7 @@ export const productData: Product[] = [
             'assets/images/brand1.png'
         ]
 	},{
-        "name": "The Pioneer Woman",
+        "name": "Adelia Dress",
         "_id": "47024",
         "description": "dress",
         "price": 100,
@@ -101,7 +101,7 @@ export const productData: Product[] = [
             'assets/images/brand1.png'
         ]
 	},{
-        "name": "The Pioneer Woman",
+        "name": "Adelia Dress",
         "_id": "47024",
         "description": "dress",
         "price": 100,
@@ -121,7 +121,7 @@ export const productData: Product[] = [
             'assets/images/brand1.png'
         ]
 	},{
-        "name": "The Pioneer Woman",
+        "name": "Adelia Dress",
         "_id": "47024",
         "description": "dress",
         "price": 100,
@@ -141,7 +141,7 @@ export const productData: Product[] = [
             'assets/images/brand1.png'
         ]
 	},{
-        "name": "The Pioneer Woman",
+        "name": "Adelia Dress",
         "_id": "47024",
         "description": "dress",
         "price": 100,
@@ -161,7 +161,7 @@ export const productData: Product[] = [
             'assets/images/brand1.png'
         ]
 	},{
-        "name": "The Pioneer Woman",
+        "name": "Adelia Dress",
         "_id": "47024",
         "description": "dress",
         "price": 100,
@@ -181,7 +181,7 @@ export const productData: Product[] = [
             'assets/images/brand1.png'
         ]
 	},{
-        "name": "The Pioneer Woman",
+        "name": "Adelia Dress",
         "_id": "47024",
         "description": "dress",
         "price": 100,
@@ -201,7 +201,7 @@ export const productData: Product[] = [
             'assets/images/brand1.png'
         ]
 	},{
-        "name": "The Pioneer Woman",
+        "name": "Adelia Dress",
         "_id": "47024",
         "description": "dress",
         "price": 100,
@@ -221,7 +221,7 @@ export const productData: Product[] = [
             'assets/images/brand1.png'
         ]
 	},{
-        "name": "The Pioneer Woman",
+        "name": "Adelia Dress",
         "_id": "47024",
         "description": "dress",
         "price": 100,
