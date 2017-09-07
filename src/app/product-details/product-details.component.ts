@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Product } from '../product';
 import { DataService } from '../data.service';
+import { Tabs } from '../tabs';
+import { Tab } from '../tab';
 
 @Component({
   selector: 'app-product-details',

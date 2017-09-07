@@ -3,7 +3,7 @@
     <div class="product-details__wrapper">
       <div class="product-details__img-wrapper">
         <div>
-          <img src="{{ product.images[0] }}" alt="picture of product">
+          <img src="{{ product.images[0] }}" alt="picture of product" class="active">
         </div>
         
         <div>
@@ -50,7 +50,11 @@
           </div>
         </div>
         <div class="product-details__tabs-wrapper">
-          
+          <tabs>
+            <tab [tabTitle]="'Description'">{{ product.description }}</tab>
+            <tab tabTitle="Brand">{{ product.brand }}</tab>
+            <tab tabTitle="Info">{{ product.info }}</tab>
+          </tabs>
         </div>
       </div>
     </div>

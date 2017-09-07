@@ -13,4 +13,9 @@ body {
     @media screen and (min-width: $screen-size-computer) {
         width: 1200px;
     }
+
+    @media screen and (max-width: $screen-size-phone) {
+        width: 100%;
+        padding: 0 10px;
+    }
 }

@@ -6,21 +6,21 @@
       <div *ngIf="!submitted; else showConfirmation">
         <form #signupForm="ngForm" (ngSubmit)="submitForm()">
           <div>
-              <div *ngIf="!name.valid && !name.pristine" class="alert">
+              <div *ngIf="!name.valid && !name.pristine" class="form-warning">
                 Name is required
               </div>
             <input #name="ngModel" id="name" name="name" [(ngModel)]="person.name" type="text" required placeholder="YOUR NAME">
           </div>
 
           <div>
-              <div *ngIf="!email.valid && !email.pristine" class="alert">
+              <div *ngIf="!email.valid && !email.pristine" class="form-warning">
                 Email is required or invalid
               </div>
             <input #email="ngModel" id="email" name="email" [(ngModel)]="person.email" type="email" required placeholder="YOUR EMAIL">
           </div>
 
           <div>
-              <div *ngIf="!message.valid && !message.pristine" class="alert">
+              <div *ngIf="!message.valid && !message.pristine" class="form-warning">
                 Message is required or invalid
               </div>
             <textarea #message="ngModel" name="message" id="message" cols="30" rows="10" [(ngModel)]="person.message"required placeholder="YOUR MESSAGE"></textarea>

@@ -10,6 +10,10 @@ export class HomepageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.textConsole();
   }
 
+  textConsole() {
+    console.log('now on the homepage');
+  }
 }

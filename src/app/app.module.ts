@@ -30,6 +30,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ProductHeaderComponent } from './product-header/product-header.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductAdvertisementComponent } from './product-advertisement/product-advertisement.component';
+import { Tabs } from './tabs';
+import { Tab } from './tab';
 
 @NgModule({
   declarations: [
@@ -57,7 +59,9 @@ import { ProductAdvertisementComponent } from './product-advertisement/product-a
     ContactFormComponent,
     ProductHeaderComponent,
     ProductDetailsComponent,
-    ProductAdvertisementComponent
+    ProductAdvertisementComponent,
+    Tabs,
+    Tab
   ],
   imports: [
     BrowserModule,

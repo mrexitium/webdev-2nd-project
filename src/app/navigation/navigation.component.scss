@@ -89,3 +89,15 @@ a:hover, a.active > li {
     }
   }
 }
+
+@media screen and (max-width: $screen-size-phone) {
+  #menu span {
+    width: 25px;
+    height: 3px;
+    margin-bottom: 6px;
+  }
+
+  #menu__list {
+    margin: -100px 0px 0 -150px;
+  }
+}

@@ -33,11 +33,27 @@
     &__icon {
         height: 15px;
         width: 15px;
-        padding-right: 10px;
+        margin-right: 10px;
     }
 
     &__login, &__shopping-bag, &__search {
         display: flex;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: $screen-size-phone) {
+    .header {
+        padding: 20px 0;
+
+        &__right-side {
+            a {
+                display: none;
+            }
+        }
+
+        &__menu {
+            padding-left: 0;
+        }
     }
 }
