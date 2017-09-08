@@ -63,3 +63,22 @@
 .form-warning {
     color: tomato;
 }
+
+@media screen and (max-width: $screen-size-phone) {
+    .contact-form {
+        margin-top: 20px;
+
+        &__wrapper {
+            flex-direction: column;
+
+            img {
+                width: 100%;
+            }
+
+            > div {
+                width: 100%;
+            }
+        }
+    }
+}
+    

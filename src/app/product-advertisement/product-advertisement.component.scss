@@ -124,3 +124,35 @@
         }
     }
 }
+
+@media screen and (max-width: $screen-size-phone) {
+    .product-advertisement {
+        padding: 20px 0 0 0;
+
+        &__headline {
+            margin-top: 0;
+
+            &:before {
+                bottom: -15px;
+            }
+        }
+
+        &__paragraph {
+            margin: 0;
+            width: 100%;
+        }
+
+        &__product-grid {
+            margin-top: 20px;
+        }
+
+        &__product-row, &__product-row:last-child {
+            flex-direction: column;
+        }
+
+        &__banner {
+            display: none;
+        }
+    }
+}
+    

@@ -21,3 +21,14 @@
         letter-spacing: 5px;
     }
 }
+
+@media screen and (max-width: $screen-size-phone) {
+    .product-header img {
+        display: none;
+    }
+
+    .product-header h1 {
+        display: none;
+    }
+}
+    

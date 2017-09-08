@@ -42,3 +42,9 @@
     margin: 30px;
     cursor: pointer;
 }
+
+@media screen and (max-width: $screen-size-phone) {
+    .brands {
+        display: none;
+    }
+}

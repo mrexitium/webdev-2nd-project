@@ -28,6 +28,12 @@
     }
 }
 
+@media screen and (max-width: $screen-size-phone) {
+    .products__sorting {
+        display: none;
+    }
+}
+
 .products__row {
     display: flex;
     justify-content: space-between;

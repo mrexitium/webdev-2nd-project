@@ -25,3 +25,13 @@
         cursor: pointer;
     }
 }
+
+@media screen and (max-width: $screen-size-phone) {
+    .header {
+        border-top: 132px solid;
+
+        button {
+            display: none;
+        }
+    }
+}

@@ -71,6 +71,10 @@
     grid-template-rows: 35px 240px 120px 85px; 
     margin-bottom: 50px;
 
+    @media screen and (max-width: $screen-size-phone) {
+        flex-basis: 100%;
+    }
+
     &__img-wrapper {
         grid-column: 1 / 2;
         grid-row: 1 / 4;

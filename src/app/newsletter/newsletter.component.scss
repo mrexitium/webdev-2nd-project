@@ -70,3 +70,21 @@
         }
     }
 }
+
+@media screen and (max-width: $screen-size-phone) {
+    .newsletter {
+        padding: 20px 0;
+
+        &__img-men {
+            display: none;
+        }
+
+        &__img-women {
+            display: none;
+        }
+
+        &__get-newsletter {
+            flex-basis: 100%;
+        }
+    }
+}

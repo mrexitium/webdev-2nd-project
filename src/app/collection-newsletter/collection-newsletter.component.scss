@@ -50,3 +50,19 @@
 ::-ms-input-placeholder { /* Microsoft Edge */
    color:    #fff;
 }
+
+@media screen and (max-width: $screen-size-phone) {
+    .newsletter {
+        padding: 20px 0;
+
+        form {
+            width: 100%;
+            flex-direction: column;
+
+            input[type=email], input[type=submit] {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    }
+}

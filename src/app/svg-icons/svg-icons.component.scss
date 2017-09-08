@@ -1,3 +1,5 @@
+@import '../../assets/scss/variables.scss';
+
 .svg-wrapper {
     display: flex;
     justify-content: space-around;
@@ -16,4 +18,14 @@
 
 .svg:hover path, .svg:hover polygon {
     fill: #000;
+}
+
+@media screen and (max-width: $screen-size-phone) {
+    .svg-wrapper {
+        width: 100%;
+    }
+
+    .svg {
+        padding: 0 10px;
+    }
 }

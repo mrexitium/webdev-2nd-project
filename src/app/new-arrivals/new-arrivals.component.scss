@@ -49,3 +49,8 @@
     @include product();
 }
 
+@media screen and (max-width: $screen-size-phone) {
+    .products__categories {
+        display: none;
+    }
+}
